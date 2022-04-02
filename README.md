@@ -1,7 +1,12 @@
-# Assignment2.NETCore
+# Assignment2 ASP.NET Core
 
 Name : Jacob Luxton
+
+April 3rd 2022
+
 Assignment 2
+
+Core application of tattoo shops to store the shops, Owners, Employees, Clients, and bookings
 
 Data Base Design Photos 
 
