@@ -8,6 +8,8 @@ Assignment 2
 
 Core application of tattoo shops to store the shops, Owners, Employees, Clients, and bookings
 
+Link to web application : https://assignment2comp2084core.azurewebsites.net/
+
 Data Base Design Photos 
 
 ![DB-Design-Assignment2](https://user-images.githubusercontent.com/85134060/161364679-8ee9a2bc-600c-4e42-a509-25f2173b66bd.png)
