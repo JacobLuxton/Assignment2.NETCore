@@ -8,7 +8,7 @@ April 3rd 2022
 
 Assignment 2
 
-Core application of tattoo shops to store the shops, Owners, Employees, Clients, and bookings
+Core application of tattoo shops to store the Shops, Owners, Employees, Clients, and Bookings
 
 Link to web application : https://assignment2comp2084core.azurewebsites.net/
 
