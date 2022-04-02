@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Assignment2Comp2084.Models.TattooShop>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TattooShopName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TattooShopLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TattooShopNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TattooShopName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.OwnerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TattooShopLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TattooShopNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TattooShopID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TattooShopID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TattooShopID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Assignment2Comp2084.Models.Owner>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerAdress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerPhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerAdress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerPhoneNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OwnerID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OwnerID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OwnerID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
